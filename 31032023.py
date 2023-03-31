@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup as bs
 
 a = []
 
-def parse12345(lst):
+def parse1234567(lst):
   for i in lst:
     soup = bs(i, 'html.parser')
     res = soup.find_all("description")
@@ -30,6 +30,6 @@ t1.start()
 
 t1.join()
 
-parse12345 (a)
+parse1234567 (a)
 
 print(time.time() - c1)
